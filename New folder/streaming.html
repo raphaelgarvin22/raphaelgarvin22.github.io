@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registrasi</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+<div class="container">
+    <!-- Links -->
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="beranda.html">BERANDA</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="ligainggris.html">LIGA INGGRIS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="ligaspanyol.html">LIGA SPANYOL</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="streaming.html">STREAMING</a>
+    </li>
+</ul>
+</div>
+</nav>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var y = document.forms["myForm"]["password"].value;
+    if (x == "") {
+        alert("email harus diisi");
+        return false;
+    }
+    if (y == "") {
+        alert("password harus diisi");
+        return false;
+    } else {
+        alert("terimakasih")
+        return true;
+    }
+}
+</script>
+</head>
+<body>
+    <div class="container">
+<h2>Registrasi MolaTV</h2>
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+    <div class="form-group">
+            <label>Username:</label>
+            <input type="text" name="username" class="form-control" placeholder="Masukan Username" />
+        </div>
+        <div class="form-group">
+            <label>Nama:</label>
+            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Masukan Email" />
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Masukan Password" />
+        </div>
+        <input type="submit" value="Kirim" src="https://mola.tv/libraries/sports">
+</form>
+<br>
+<a href="https://mola.tv/libraries/sports">Masuk ke MOLA TV >></a>
+</body>
+</html>
